@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Configurar Github</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col col-sm-12">
+                <div class="section">
+                    <div class="section__header">
+                        <h1>Configuraciones</h1>
+                    </div>
+                    <div class="section__content">
+                        <div class="section__content--title">
+                            <h2>Configurar nombre de usuario y correo electronico</h2>
+                        </div>
+                        <div class="section__content--text">
+                            <code>
+                            	<p>
+									git config --global user.name "Nombre Apellidos" <br/>
+									git config --global user.email "email@example.com"
+								</p>
+							</code>
+                        </div>
+                    </div>
+                    <div class="section__content">
+                        <div class="section__content--title">
+                            <h2>Configurar Alias</h2>
+                        </div>
+                        <div class="section__content--text">
+	
+							<code>
+								<p>
+									git config --global alias.nombreAlias "el alias de git"
+								</p>
+							</code>
+
+							<p>Ejemplo</p>
+							<p>
+								Configurar el log de git para que nos pueda arrojar informacion mas detallada y organizada
+							</p>
+							<code>
+								<p>
+									git config --global alias.gitLog1 "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --all"
+								</p>
+								
+								<hr>
+								<p>
+									git config --global alias.log2 "log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n'' %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --all" 
+								</p>
+								<hr>				
+								<p>
+									git config --global alias.log3 "log --graph --abbrev-commit --decorate --date=relative --all"
+
+								</p>
+								<hr>
+								<p>
+
+									git config --global alias.log4 "log --graph --oneline --decorate --all"
+
+									
+								</p>
+							</code>
+							
+							<p>Ejecutar un alias</p>
+
+                            <code>
+                            	<p>
+ 									git log1
+ 									<img src="./img/log1.png" alt="">
+ 									<br/>
+ 									git log2
+ 									<img src="./img/log2.png" alt="">
+ 									<br/>
+ 									git log3
+ 									<img src="./img/log3.png" alt="">
+ 									<br/>
+ 									git log4
+ 									<img src="./img/log4.png" alt="">
+								</p>
+							</code>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
