@@ -37,6 +37,104 @@
 								
                         </div>
                     </div>
+                    <div class="section__content">
+                        <div class="section__content--title">
+                            <h2>Ver en que rama estamos</h2>
+                        </div>
+                        <div class="section__content--text">
+                            
+                            <code>
+                            	<p>
+									git branch
+								</p>
+							</code>
+							
+							Resultado 
+
+							<code>
+								<p>
+									*master
+									<br/>
+									rama1
+								</p>
+							</code>
+
+							<p>
+								En el ejemplo anterior tenemos 2 ramas, el que tiene el asterisco significa que estamos en parados en esa rama en este caso estamos en la rama master.
+							</p>
+								
+                        </div>
+                    </div>
+                    <div class="section__content">
+                        <div class="section__content--title">
+                            <h2>Movernos entre ramas y commits</h2>
+                        </div>
+                        <div class="section__content--text">
+                            
+                            <code>
+                            	<p>
+									git checkout nombre_rama
+								</p>
+							</code>
+							
+							Ejemplo 
+
+							<code>
+								<p>
+									git checkout rama1									
+								</p>
+							</code>
+								
+                        </div>
+                    </div>                    
+                    <div class="section__content">
+                        <div class="section__content--title">
+                            <h2>Fusionar ramas</h2>
+                        </div>
+                        <div class="section__content--text">
+                            <p>
+                            	Es importante estar posicionado en la rama que va a absorber los cambios de otra, en nuestro caso master y ejecutamos una simple linea de comando
+                            </p>
+                            <code>
+                            	<p>
+									git merge nombre_rama
+								</p>
+							</code>
+							
+							Ejemplo 
+
+							<code>
+								<p>
+									git merge rama1									
+								</p>
+							</code>
+							
+							<p>
+								En este momento ya todos los cambios han sido fusionados y podemos enviarlos al repositorio.
+							</p>
+
+                        </div>
+                    </div>                    
+                    <div class="section__content">
+                        <div class="section__content--title">
+                            <h2>Borrrar ramas</h2>
+                        </div>
+                        <div class="section__content--text">
+                            <code>
+                            	<p>
+									git branch -d nombre_rama
+								</p>
+							</code>
+							
+							Ejemplo 
+
+							<code>
+								<p>
+									git branch -d rama1									
+								</p>
+							</code>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
